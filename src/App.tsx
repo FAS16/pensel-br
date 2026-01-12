@@ -8,6 +8,7 @@ import Index from "./pages/Index";
 import Ydelser from "./pages/Ydelser";
 import OmOs from "./pages/OmOs";
 import Galleri from "./pages/Galleri";
+import Anbefalinger from "./pages/Anbefalinger";
 import Kontakt from "./pages/Kontakt";
 import NotFound from "./pages/NotFound";
 
@@ -21,11 +22,12 @@ const App = () => (
         <Sonner />
         <BrowserRouter>
           <Routes>
-            <Route path="/" element={<Index />} />
-            <Route path="/ydelser" element={<Ydelser />} />
-            <Route path="/om-os" element={<OmOs />} />
-            <Route path="/galleri" element={<Galleri />} />
-            <Route path="/kontakt" element={<Kontakt />} />
+          <Route path="/" element={<Index />} />
+          <Route path="/ydelser" element={<Ydelser />} />
+          <Route path="/om-os" element={<OmOs />} />
+          <Route path="/galleri" element={<Galleri />} />
+          <Route path="/anbefalinger" element={<Anbefalinger />} />
+          <Route path="/kontakt" element={<Kontakt />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>

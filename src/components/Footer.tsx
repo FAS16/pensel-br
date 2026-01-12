@@ -51,6 +51,9 @@ export const Footer = () => {
               <Link to="/galleri" className="block text-background/70 hover:text-background transition-colors">
                 Galleri
               </Link>
+              <Link to="/anbefalinger" className="block text-background/70 hover:text-background transition-colors">
+                Anbefalinger
+              </Link>
               <Link to="/kontakt" className="block text-background/70 hover:text-background transition-colors">
                 Kontakt
               </Link>

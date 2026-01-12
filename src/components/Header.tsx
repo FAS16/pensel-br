@@ -11,6 +11,7 @@ export const Header = () => {
     { href: "/ydelser", label: "Ydelser" },
     { href: "/om-os", label: "Om os" },
     { href: "/galleri", label: "Galleri" },
+    { href: "/anbefalinger", label: "Anbefalinger" },
     { href: "/kontakt", label: "Kontakt" },
   ];
 
