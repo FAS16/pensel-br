@@ -3,7 +3,7 @@ import { ArrowRight } from "lucide-react";
 
 export const EmpathySection = () => {
   return (
-    <section className="py-20 lg:py-28 bg-background">
+    <section id="ydelser" className="py-20 lg:py-28 bg-background">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
           {/* Empathy block */}

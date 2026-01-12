@@ -16,7 +16,7 @@ const galleryImages = [
 
 export const Gallery = () => {
   return (
-    <section className="py-20 lg:py-28 bg-background">
+    <section id="galleri" className="py-20 lg:py-28 bg-background">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
