@@ -3,6 +3,7 @@ import { Hero } from "@/components/Hero";
 import { Testimonials } from "@/components/Testimonials";
 import { Geography } from "@/components/Geography";
 import { Footer } from "@/components/Footer";
+import { SEO } from "@/components/SEO";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Users, Eye, Lightbulb, Sparkles, CheckCircle } from "lucide-react";
 import { Link } from "react-router-dom";
@@ -28,6 +29,7 @@ const featuredGallery = [
 const Index = () => {
   return (
     <div className="min-h-screen">
+      <SEO canonical="/" />
       <Header />
       <main>
         <Hero />
