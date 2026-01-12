@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
+import { SEO } from "@/components/SEO";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -28,6 +29,11 @@ const Kontakt = () => {
 
   return (
     <div className="min-h-screen">
+      <SEO 
+        title="Kontakt"
+        description="Kontakt os for gratis rådgivning og uforpligtende tilbud på malerarbejde. Ring 12 34 56 78 eller udfyld formularen. Vi dækker hele Sjælland."
+        canonical="/kontakt"
+      />
       <Header />
       <main className="pt-20">
         {/* Hero */}
@@ -54,7 +60,7 @@ const Kontakt = () => {
                   Kontaktoplysninger
                 </h2>
                 
-                <div className="space-y-6">
+                <address className="space-y-6 not-italic">
                   <a 
                     href="tel:12345678" 
                     className="flex items-start gap-4 p-4 bg-card rounded-xl border border-border hover:shadow-md transition-shadow"
@@ -104,7 +110,7 @@ const Kontakt = () => {
                       <p className="text-sm text-muted-foreground mt-1">Besigtigelse efter aftale</p>
                     </div>
                   </div>
-                </div>
+                </address>
               </div>
 
               {/* Contact form */}
@@ -119,7 +125,9 @@ const Kontakt = () => {
                   
                   <form onSubmit={handleSubmit} className="space-y-4">
                     <div>
+                      <label htmlFor="name" className="sr-only">Dit navn</label>
                       <Input
+                        id="name"
                         type="text"
                         placeholder="Dit navn"
                         value={name}
@@ -129,24 +137,34 @@ const Kontakt = () => {
                       />
                     </div>
                     <div className="grid sm:grid-cols-2 gap-4">
-                      <Input
-                        type="tel"
-                        placeholder="Telefon"
-                        value={phone}
-                        onChange={(e) => setPhone(e.target.value)}
-                        required
-                        className="h-12 text-base"
-                      />
-                      <Input
-                        type="email"
-                        placeholder="Email (valgfrit)"
-                        value={email}
-                        onChange={(e) => setEmail(e.target.value)}
-                        className="h-12 text-base"
-                      />
+                      <div>
+                        <label htmlFor="phone" className="sr-only">Telefon</label>
+                        <Input
+                          id="phone"
+                          type="tel"
+                          placeholder="Telefon"
+                          value={phone}
+                          onChange={(e) => setPhone(e.target.value)}
+                          required
+                          className="h-12 text-base"
+                        />
+                      </div>
+                      <div>
+                        <label htmlFor="email" className="sr-only">Email</label>
+                        <Input
+                          id="email"
+                          type="email"
+                          placeholder="Email (valgfrit)"
+                          value={email}
+                          onChange={(e) => setEmail(e.target.value)}
+                          className="h-12 text-base"
+                        />
+                      </div>
                     </div>
                     <div>
+                      <label htmlFor="message" className="sr-only">Beskriv din opgave</label>
                       <Textarea
+                        id="message"
                         placeholder="Beskriv din opgave..."
                         value={message}
                         onChange={(e) => setMessage(e.target.value)}

@@ -1,5 +1,6 @@
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
+import { SEO } from "@/components/SEO";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
@@ -23,6 +24,11 @@ const galleryImages = [
 const Galleri = () => {
   return (
     <div className="min-h-screen">
+      <SEO 
+        title="Galleri"
+        description="Se billeder af vores malerarbejde. Indvendig og udvendig maling for private og erhverv. Alle billeder viser opgaver udført af os på Sjælland."
+        canonical="/galleri"
+      />
       <Header />
       <main className="pt-20">
         {/* Hero */}
@@ -44,26 +50,27 @@ const Galleri = () => {
           <div className="container mx-auto px-4">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
               {galleryImages.map((image) => (
-                <div
+                <figure
                   key={image.id}
                   className="group relative aspect-square rounded-2xl overflow-hidden cursor-pointer"
                 >
                   <img
                     src={image.src}
                     alt={image.alt}
+                    loading="lazy"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-foreground/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <figcaption className="absolute inset-0 bg-gradient-to-t from-foreground/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                     <div className="absolute bottom-0 left-0 right-0 p-6">
                       <span className="inline-block bg-primary text-primary-foreground text-xs font-medium px-3 py-1 rounded-full mb-2">
                         {image.category}
                       </span>
-                      <h3 className="text-card font-semibold text-lg">
+                      <p className="text-card font-semibold text-lg">
                         {image.alt}
-                      </h3>
+                      </p>
                     </div>
-                  </div>
-                </div>
+                  </figcaption>
+                </figure>
               ))}
             </div>
           </div>

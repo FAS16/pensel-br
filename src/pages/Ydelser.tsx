@@ -1,5 +1,6 @@
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
+import { SEO } from "@/components/SEO";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Home, Building2, Paintbrush, PaintBucket, Brush, Palette } from "lucide-react";
 import { Link } from "react-router-dom";
@@ -40,6 +41,11 @@ const services = [
 const Ydelser = () => {
   return (
     <div className="min-h-screen">
+      <SEO 
+        title="Ydelser"
+        description="Se vores malerydelser: indvendig og udvendig maling, spartling, tapetsering og farverådgivning. Vi hjælper private og erhverv på hele Sjælland."
+        canonical="/ydelser"
+      />
       <Header />
       <main className="pt-20">
         {/* Hero */}
@@ -61,20 +67,20 @@ const Ydelser = () => {
           <div className="container mx-auto px-4">
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
               {services.map((service, index) => (
-                <div
+                <article
                   key={index}
                   className="bg-card rounded-2xl p-8 shadow-sm border border-border hover:shadow-md transition-shadow"
                 >
                   <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center mb-6">
                     <service.icon className="w-7 h-7 text-primary" />
                   </div>
-                  <h3 className="text-xl font-bold text-foreground mb-3">
+                  <h2 className="text-xl font-bold text-foreground mb-3">
                     {service.title}
-                  </h3>
+                  </h2>
                   <p className="text-muted-foreground leading-relaxed">
                     {service.description}
                   </p>
-                </div>
+                </article>
               ))}
             </div>
           </div>

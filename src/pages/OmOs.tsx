@@ -1,5 +1,6 @@
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
+import { SEO } from "@/components/SEO";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Users, Eye, Lightbulb, Sparkles, CheckCircle } from "lucide-react";
 import { Link } from "react-router-dom";
@@ -35,6 +36,11 @@ const values = [
 const OmOs = () => {
   return (
     <div className="min-h-screen">
+      <SEO 
+        title="Om os"
+        description="Mød de to brødre bag malerfirmaet. Over 10 års erfaring med professionelt malerarbejde på Sjælland. Kvalitet, ærlighed og god kundeservice."
+        canonical="/om-os"
+      />
       <Header />
       <main className="pt-20">
         {/* Hero */}
@@ -55,7 +61,7 @@ const OmOs = () => {
         <section className="py-16 lg:py-24 bg-background">
           <div className="container mx-auto px-4">
             <div className="max-w-3xl mx-auto">
-              <div className="prose prose-lg mx-auto text-center">
+              <article className="prose prose-lg mx-auto text-center">
                 <h2 className="text-3xl font-bold text-foreground mb-6">
                   Vores historie
                 </h2>
@@ -73,7 +79,7 @@ const OmOs = () => {
                   Uanset om det er en lille opgave eller et større projekt, behandler vi alle kunder ens – 
                   med respekt og engagement.
                 </p>
-              </div>
+              </article>
             </div>
           </div>
         </section>
