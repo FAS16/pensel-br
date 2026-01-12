@@ -1,4 +1,5 @@
 import { Phone, Mail, MapPin } from "lucide-react";
+import { Link } from "react-router-dom";
 
 export const Footer = () => {
   return (
@@ -7,12 +8,12 @@ export const Footer = () => {
         <div className="grid md:grid-cols-3 gap-8 mb-8">
           {/* Company info */}
           <div>
-            <div className="flex items-center gap-2 mb-4">
+            <Link to="/" className="flex items-center gap-2 mb-4">
               <div className="w-10 h-10 rounded-lg bg-background flex items-center justify-center">
                 <span className="text-foreground font-bold text-lg">M</span>
               </div>
               <span className="font-bold text-xl">Malerfirma</span>
-            </div>
+            </Link>
             <p className="text-background/70 text-sm">
               Professionelt malerarbejde udført af to brødre. Vi dækker hele Sjælland.
             </p>
@@ -41,18 +42,18 @@ export const Footer = () => {
           <div>
             <h3 className="font-semibold text-lg mb-4">Sider</h3>
             <nav className="space-y-2">
-              <a href="#ydelser" className="block text-background/70 hover:text-background transition-colors">
+              <Link to="/ydelser" className="block text-background/70 hover:text-background transition-colors">
                 Ydelser
-              </a>
-              <a href="#om-os" className="block text-background/70 hover:text-background transition-colors">
+              </Link>
+              <Link to="/om-os" className="block text-background/70 hover:text-background transition-colors">
                 Om os
-              </a>
-              <a href="#galleri" className="block text-background/70 hover:text-background transition-colors">
+              </Link>
+              <Link to="/galleri" className="block text-background/70 hover:text-background transition-colors">
                 Galleri
-              </a>
-              <a href="#kontakt" className="block text-background/70 hover:text-background transition-colors">
+              </Link>
+              <Link to="/kontakt" className="block text-background/70 hover:text-background transition-colors">
                 Kontakt
-              </a>
+              </Link>
             </nav>
           </div>
         </div>
