@@ -1,0 +1,66 @@
+import { Phone, Mail, MapPin } from "lucide-react";
+
+export const Footer = () => {
+  return (
+    <footer className="bg-foreground text-background py-12">
+      <div className="container mx-auto px-4">
+        <div className="grid md:grid-cols-3 gap-8 mb-8">
+          {/* Company info */}
+          <div>
+            <div className="flex items-center gap-2 mb-4">
+              <div className="w-10 h-10 rounded-lg bg-background flex items-center justify-center">
+                <span className="text-foreground font-bold text-lg">M</span>
+              </div>
+              <span className="font-bold text-xl">Malerfirma</span>
+            </div>
+            <p className="text-background/70 text-sm">
+              Professionelt malerarbejde udført af to brødre. Vi dækker hele Sjælland.
+            </p>
+          </div>
+
+          {/* Contact info */}
+          <div>
+            <h3 className="font-semibold text-lg mb-4">Kontakt</h3>
+            <div className="space-y-3">
+              <a href="tel:12345678" className="flex items-center gap-3 text-background/70 hover:text-background transition-colors">
+                <Phone className="w-4 h-4" />
+                <span>12 34 56 78</span>
+              </a>
+              <a href="mailto:info@malerfirma.dk" className="flex items-center gap-3 text-background/70 hover:text-background transition-colors">
+                <Mail className="w-4 h-4" />
+                <span>info@malerfirma.dk</span>
+              </a>
+              <div className="flex items-center gap-3 text-background/70">
+                <MapPin className="w-4 h-4" />
+                <span>Amager & Nordvest, København</span>
+              </div>
+            </div>
+          </div>
+
+          {/* Quick links */}
+          <div>
+            <h3 className="font-semibold text-lg mb-4">Sider</h3>
+            <nav className="space-y-2">
+              <a href="#ydelser" className="block text-background/70 hover:text-background transition-colors">
+                Ydelser
+              </a>
+              <a href="#om-os" className="block text-background/70 hover:text-background transition-colors">
+                Om os
+              </a>
+              <a href="#galleri" className="block text-background/70 hover:text-background transition-colors">
+                Galleri
+              </a>
+              <a href="#kontakt" className="block text-background/70 hover:text-background transition-colors">
+                Kontakt
+              </a>
+            </nav>
+          </div>
+        </div>
+
+        <div className="border-t border-background/20 pt-8 text-center text-background/50 text-sm">
+          <p>© {new Date().getFullYear()} Malerfirma. Alle rettigheder forbeholdes.</p>
+        </div>
+      </div>
+    </footer>
+  );
+};
