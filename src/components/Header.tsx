@@ -50,7 +50,7 @@ export const Header = () => {
 
           {/* CTA buttons */}
           <div className="flex items-center gap-3">
-            <a href="tel:12345678" className="hidden sm:flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors">
+            <a href="tel:12345678" className="flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors">
               <Phone className="w-4 h-4" />
               <span className="text-sm font-medium">12 34 56 78</span>
             </a>
