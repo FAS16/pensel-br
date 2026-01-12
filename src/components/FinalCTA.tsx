@@ -3,7 +3,7 @@ import { Phone } from "lucide-react";
 
 export const FinalCTA = () => {
   return (
-    <section className="py-20 lg:py-28 bg-background">
+    <section id="kontakt" className="py-20 lg:py-28 bg-background">
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
