@@ -5,7 +5,7 @@ import { Geography } from "@/components/Geography";
 import { Footer } from "@/components/Footer";
 import { SEO } from "@/components/SEO";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Users, Eye, Lightbulb, Sparkles, CheckCircle } from "lucide-react";
+import { ArrowRight, Users, Eye, Lightbulb, Sparkles, CheckCircle, Heart } from "lucide-react";
 import { Link } from "react-router-dom";
 
 import gallery1 from "@/assets/gallery-1.jpg";
@@ -13,11 +13,11 @@ import gallery2 from "@/assets/gallery-2.jpg";
 import gallery3 from "@/assets/gallery-3.jpg";
 
 const reasons = [
-  { icon: Users, text: "Du taler direkte med dem, der udfører arbejdet" },
-  { icon: Eye, text: "Vi kommer og ser opgaven – ikke gætter ud fra billeder" },
-  { icon: Lightbulb, text: "Vi rådgiver også, hvis vi mener en anden løsning er bedre" },
-  { icon: Sparkles, text: "Vi bruger kvalitetsprodukter og går op i finish" },
-  { icon: CheckCircle, text: "Vi afslutter først, når du er tilfreds" },
+  { icon: Heart, title: "Familiedrevet", text: "To brødre der personligt står bag hver opgave" },
+  { icon: Users, title: "Direkte kontakt", text: "Du taler med dem, der udfører arbejdet" },
+  { icon: Eye, title: "Vi ser opgaven", text: "Vi kommer forbi – ikke gætter ud fra billeder" },
+  { icon: Sparkles, title: "Kvalitet i fokus", text: "Kun kvalitetsprodukter og omhyggelig finish" },
+  { icon: CheckCircle, title: "Tilfredshedsgaranti", text: "Vi afslutter først, når du er tilfreds" },
 ];
 
 const featuredGallery = [
@@ -38,21 +38,31 @@ const Index = () => {
         <section className="py-20 lg:py-28 bg-secondary/50">
           <div className="container mx-auto px-4">
             <div className="max-w-3xl mx-auto text-center mb-12">
+              <span className="inline-flex items-center gap-2 text-primary font-medium mb-4">
+                <Heart className="w-5 h-5" />
+                To brødre – ét mål
+              </span>
               <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-                Derfor vælger kunder os
+                Derfor stoler kunder på os
               </h2>
+              <p className="text-lg text-muted-foreground max-w-xl mx-auto">
+                Som familiedrevet firma er vores omdømme alt. Vi står personligt inde for kvaliteten af alt vores arbejde.
+              </p>
             </div>
 
             <div className="max-w-2xl mx-auto space-y-4 mb-10">
               {reasons.map((reason, index) => (
                 <div
                   key={index}
-                  className="flex items-center gap-4 bg-card rounded-xl p-5 shadow-sm border border-border hover:shadow-md transition-shadow"
+                  className="flex items-start gap-4 bg-card rounded-xl p-5 shadow-sm border border-border hover:shadow-md transition-shadow"
                 >
                   <div className="flex-shrink-0 w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
                     <reason.icon className="w-6 h-6 text-primary" />
                   </div>
-                  <p className="text-foreground text-lg">{reason.text}</p>
+                  <div>
+                    <h3 className="font-semibold text-foreground">{reason.title}</h3>
+                    <p className="text-muted-foreground">{reason.text}</p>
+                  </div>
                 </div>
               ))}
             </div>
@@ -60,7 +70,7 @@ const Index = () => {
             <div className="text-center">
               <Button size="lg" className="gap-2" asChild>
                 <Link to="/om-os">
-                  Læs mere om os
+                  Mød os personligt
                   <ArrowRight className="w-5 h-5" />
                 </Link>
               </Button>
