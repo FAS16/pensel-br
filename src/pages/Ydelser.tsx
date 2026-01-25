@@ -23,8 +23,8 @@ const services = [
   },
   {
     icon: PaintBucket,
-    title: "Nybyggeri og renovering",
-    description: "Vi samarbejder med bygherrer og entreprenører om malerarbejde ved nybyg og større renoveringsprojekter.",
+    title: "Microcement",
+    description: "Moderne og holdbar overflade til gulve, vægge og møbler. Microcement giver et smukt, fugeløst look med industriel elegance.",
   },
   {
     icon: Brush,
