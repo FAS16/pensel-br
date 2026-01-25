@@ -43,14 +43,30 @@ const OmOs = () => {
       />
       <Header />
       <main className="pt-20">
-        {/* Hero */}
-        <section className="py-16 lg:py-24 bg-gradient-to-br from-background via-background to-secondary/30">
-          <div className="container mx-auto px-4">
+        {/* Hero with video background */}
+        <section className="relative py-24 lg:py-32 overflow-hidden">
+          {/* Video background */}
+          <div className="absolute inset-0 z-0">
+            <video
+              autoPlay
+              muted
+              loop
+              playsInline
+              className="w-full h-full object-cover"
+            >
+              <source src="/videos/om-os-hero.mp4" type="video/mp4" />
+            </video>
+            {/* Dark overlay for text readability */}
+            <div className="absolute inset-0 bg-foreground/60" />
+          </div>
+          
+          {/* Content */}
+          <div className="container mx-auto px-4 relative z-10">
             <div className="max-w-3xl mx-auto text-center">
-              <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
+              <h1 className="text-4xl md:text-5xl font-bold text-background mb-6">
                 Om os
               </h1>
-              <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
+              <p className="text-lg md:text-xl text-background/90 leading-relaxed">
                 To brødre med passion for håndværk og kundetilfredshed.
               </p>
             </div>
