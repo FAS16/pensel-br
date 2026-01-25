@@ -2,20 +2,49 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { useToast } from "@/hooks/use-toast";
+import emailjs from "@emailjs/browser";
+
+const EMAILJS_SERVICE_ID = "service_l69m6nu";
+const EMAILJS_TEMPLATE_ID = "template_f7d3qyp";
+const EMAILJS_PUBLIC_KEY = "-fVgPJDXnY3Ifqwz4";
 
 export const ContactForm = () => {
   const [name, setName] = useState("");
   const [phone, setPhone] = useState("");
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const { toast } = useToast();
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    toast({
-      title: "Tak for din henvendelse!",
-      description: "Vi ringer dig op hurtigst muligt.",
-    });
-    setName("");
-    setPhone("");
+    setIsSubmitting(true);
+
+    try {
+      await emailjs.send(
+        EMAILJS_SERVICE_ID,
+        EMAILJS_TEMPLATE_ID,
+        {
+          from_name: name,
+          phone: phone,
+        },
+        EMAILJS_PUBLIC_KEY
+      );
+
+      toast({
+        title: "Tak for din henvendelse!",
+        description: "Vi ringer dig op hurtigst muligt.",
+      });
+      setName("");
+      setPhone("");
+    } catch (error) {
+      console.error("EmailJS error:", error);
+      toast({
+        title: "Noget gik galt",
+        description: "Prøv venligst igen eller ring til os direkte.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -48,8 +77,12 @@ export const ContactForm = () => {
             className="h-12 text-base"
           />
         </div>
-        <Button type="submit" className="w-full h-12 text-base font-semibold">
-          Bliv ringet op
+        <Button 
+          type="submit" 
+          className="w-full h-12 text-base font-semibold"
+          disabled={isSubmitting}
+        >
+          {isSubmitting ? "Sender..." : "Bliv ringet op"}
         </Button>
       </form>
     </div>
