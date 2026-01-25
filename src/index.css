@@ -22,8 +22,8 @@
     --popover: 0 0% 100%;
     --popover-foreground: 200 25% 15%;
 
-    /* Professional petroleum/teal primary */
-    --primary: 195 60% 28%;
+    /* Deep burgundy red primary */
+    --primary: 0 59% 28%;
     --primary-foreground: 40 33% 98%;
 
     /* Warm secondary */
@@ -43,7 +43,7 @@
 
     --border: 40 20% 88%;
     --input: 40 20% 88%;
-    --ring: 195 60% 28%;
+    --ring: 0 59% 28%;
 
     --radius: 0.75rem;
 
@@ -68,7 +68,7 @@
     --popover: 200 25% 12%;
     --popover-foreground: 40 33% 98%;
 
-    --primary: 195 50% 45%;
+    --primary: 0 50% 45%;
     --primary-foreground: 200 25% 10%;
 
     --secondary: 200 20% 18%;
@@ -85,7 +85,7 @@
 
     --border: 200 20% 20%;
     --input: 200 20% 20%;
-    --ring: 195 50% 45%;
+    --ring: 0 50% 45%;
 
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
