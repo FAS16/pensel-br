@@ -185,9 +185,10 @@ const Kontakt = () => {
                         <Input
                           id="email"
                           type="email"
-                          placeholder="Email (valgfrit)"
+                          placeholder="Email"
                           value={email}
                           onChange={(e) => setEmail(e.target.value)}
+                          required
                           className="h-12 text-base"
                         />
                       </div>
