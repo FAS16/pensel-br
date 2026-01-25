@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Phone, Clock, Calendar, Shield, Heart, Users } from "lucide-react";
 import { ContactForm } from "./ContactForm";
-
+import { Link } from "react-router-dom";
 export const Hero = () => {
   return (
     <section className="relative min-h-screen bg-gradient-to-br from-background via-background to-secondary/30 pt-24 pb-16 lg:pb-24">
@@ -28,12 +28,8 @@ export const Hero = () => {
 
             {/* CTAs */}
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button 
-                size="lg" 
-                className="text-lg px-8 py-6"
-                onClick={() => document.getElementById('contact-form')?.scrollIntoView({ behavior: 'smooth' })}
-              >
-                Få gratis tilbud
+              <Button size="lg" className="text-lg px-8 py-6" asChild>
+                <Link to="/kontakt">Få gratis tilbud</Link>
               </Button>
               <Button variant="outline" size="lg" className="text-lg px-8 py-6 gap-2" asChild>
                 <a href="tel:50593770">
