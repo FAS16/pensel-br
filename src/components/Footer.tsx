@@ -1,5 +1,6 @@
 import { Phone, Mail, MapPin } from "lucide-react";
 import { Link } from "react-router-dom";
+import logo from "@/assets/malerbrdr-logo.png";
 
 export const Footer = () => {
   return (
@@ -8,11 +9,12 @@ export const Footer = () => {
         <div className="grid md:grid-cols-3 gap-8 mb-8">
           {/* Company info */}
           <div>
-            <Link to="/" className="flex items-center gap-2 mb-4">
-              <div className="w-10 h-10 rounded-lg bg-background flex items-center justify-center">
-                <span className="text-foreground font-bold text-lg">M</span>
-              </div>
-              <span className="font-bold text-xl">Malerfirma</span>
+            <Link to="/" className="flex items-center gap-3 mb-4">
+              <img 
+                src={logo} 
+                alt="Maler Brdr. logo" 
+                className="h-14 w-auto brightness-0 invert"
+              />
             </Link>
             <p className="text-background/70 text-sm">
               Professionelt malerarbejde udført af to brødre. Vi dækker hele Sjælland.
@@ -62,7 +64,7 @@ export const Footer = () => {
         </div>
 
         <div className="border-t border-background/20 pt-8 text-center text-background/50 text-sm">
-          <p>© {new Date().getFullYear()} Malerfirma. Alle rettigheder forbeholdes.</p>
+          <p>© {new Date().getFullYear()} Maler Brdr. Alle rettigheder forbeholdes.</p>
         </div>
       </div>
     </footer>
