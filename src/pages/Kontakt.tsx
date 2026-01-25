@@ -107,7 +107,7 @@ const Kontakt = () => {
                   </a>
 
                   <a 
-                    href="mailto:malerbrodrene@hotmail.com" 
+                    href="mailto:kontakt@malerbrdr.dk" 
                     className="flex items-start gap-4 p-4 bg-card rounded-xl border border-border hover:shadow-md transition-shadow"
                   >
                     <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
@@ -115,7 +115,7 @@ const Kontakt = () => {
                     </div>
                     <div>
                       <h3 className="font-semibold text-foreground">Email</h3>
-                      <p className="text-muted-foreground">malerbrodrene@hotmail.com</p>
+                      <p className="text-muted-foreground">kontakt@malerbrdr.dk</p>
                       <p className="text-sm text-muted-foreground mt-1">Vi svarer inden for 24 timer</p>
                     </div>
                   </a>
