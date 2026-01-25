@@ -15,6 +15,7 @@ export const Footer = () => {
                 alt="Maler Brdr. logo" 
                 className="h-14 w-auto brightness-0 invert"
               />
+              <span className="font-bold text-xl">Maler Brdr.</span>
             </Link>
             <p className="text-background/70 text-sm">
               Professionelt malerarbejde udført af to brødre. Vi dækker hele Sjælland.
