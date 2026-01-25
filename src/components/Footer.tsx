@@ -30,9 +30,9 @@ export const Footer = () => {
                 <Phone className="w-4 h-4" />
                 <span>50 59 37 70</span>
               </a>
-              <a href="mailto:malerbrodrene@hotmail.com" className="flex items-center gap-3 text-background/70 hover:text-background transition-colors">
+              <a href="mailto:kontakt@malerbrdr.dk" className="flex items-center gap-3 text-background/70 hover:text-background transition-colors">
                 <Mail className="w-4 h-4" />
-                <span>malerbrodrene@hotmail.com</span>
+                <span>kontakt@malerbrdr.dk</span>
               </a>
               <div className="flex items-center gap-3 text-background/70">
                 <MapPin className="w-4 h-4" />
