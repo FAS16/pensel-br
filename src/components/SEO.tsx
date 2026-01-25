@@ -30,7 +30,7 @@ export const SEO = ({
     name: SITE_NAME,
     description: DEFAULT_DESCRIPTION,
     url: BASE_URL,
-    telephone: "+4512345678",
+    telephone: "+4550593770",
     email: "info@malerfirma.dk",
     address: {
       "@type": "PostalAddress",

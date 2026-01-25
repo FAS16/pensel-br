@@ -21,7 +21,7 @@ export const FinalCTA = () => {
             </Button>
             <Button variant="outline" size="lg" className="text-lg px-8 py-6 gap-2">
               <Phone className="w-5 h-5" />
-              Ring direkte: 12 34 56 78
+              Ring direkte: 50 59 37 70
             </Button>
           </div>
         </div>
