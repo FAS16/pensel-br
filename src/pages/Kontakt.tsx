@@ -31,7 +31,7 @@ const Kontakt = () => {
     <div className="min-h-screen">
       <SEO 
         title="Kontakt"
-        description="Kontakt os for gratis rådgivning og uforpligtende tilbud på malerarbejde. Ring 12 34 56 78 eller udfyld formularen. Vi dækker hele Sjælland."
+        description="Kontakt os for gratis rådgivning og uforpligtende tilbud på malerarbejde. Ring 50 59 37 70 eller udfyld formularen. Vi dækker hele Sjælland."
         canonical="/kontakt"
       />
       <Header />
@@ -62,7 +62,7 @@ const Kontakt = () => {
                 
                 <address className="space-y-6 not-italic">
                   <a 
-                    href="tel:12345678" 
+                    href="tel:50593770" 
                     className="flex items-start gap-4 p-4 bg-card rounded-xl border border-border hover:shadow-md transition-shadow"
                   >
                     <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
@@ -70,7 +70,7 @@ const Kontakt = () => {
                     </div>
                     <div>
                       <h3 className="font-semibold text-foreground">Telefon</h3>
-                      <p className="text-muted-foreground">12 34 56 78</p>
+                      <p className="text-muted-foreground">50 59 37 70</p>
                       <p className="text-sm text-muted-foreground mt-1">Ring og få en hurtig vurdering</p>
                     </div>
                   </a>
