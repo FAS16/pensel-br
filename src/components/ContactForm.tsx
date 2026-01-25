@@ -19,7 +19,7 @@ export const ContactForm = () => {
   };
 
   return (
-    <div className="bg-card rounded-2xl p-8 shadow-elevated border border-border">
+    <div id="contact-form" className="bg-card rounded-2xl p-8 shadow-elevated border border-border">
       <h2 className="text-2xl font-bold text-foreground mb-2">
         Få et hurtigt tilbud
       </h2>
