@@ -7,24 +7,55 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
 import { Phone, Mail, MapPin, Clock } from "lucide-react";
+import emailjs from "@emailjs/browser";
+
+const EMAILJS_SERVICE_ID = "service_l69m6nu";
+const EMAILJS_TEMPLATE_ID = "template_phamqhw";
+const EMAILJS_PUBLIC_KEY = "-fVgPJDXnY3Ifqwz4";
 
 const Kontakt = () => {
   const [name, setName] = useState("");
   const [phone, setPhone] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const { toast } = useToast();
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    toast({
-      title: "Tak for din henvendelse!",
-      description: "Vi vender tilbage til dig hurtigst muligt.",
-    });
-    setName("");
-    setPhone("");
-    setEmail("");
-    setMessage("");
+    setIsSubmitting(true);
+
+    try {
+      await emailjs.send(
+        EMAILJS_SERVICE_ID,
+        EMAILJS_TEMPLATE_ID,
+        {
+          from_name: name,
+          phone: phone,
+          email: email,
+          message: message,
+        },
+        EMAILJS_PUBLIC_KEY
+      );
+
+      toast({
+        title: "Tak for din henvendelse!",
+        description: "Vi vender tilbage til dig hurtigst muligt.",
+      });
+      setName("");
+      setPhone("");
+      setEmail("");
+      setMessage("");
+    } catch (error) {
+      console.error("EmailJS error:", error);
+      toast({
+        title: "Noget gik galt",
+        description: "Prøv venligst igen eller ring til os direkte.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -172,8 +203,12 @@ const Kontakt = () => {
                         className="min-h-32 text-base resize-none"
                       />
                     </div>
-                    <Button type="submit" className="w-full h-12 text-base font-semibold">
-                      Send besked
+                    <Button 
+                      type="submit" 
+                      className="w-full h-12 text-base font-semibold"
+                      disabled={isSubmitting}
+                    >
+                      {isSubmitting ? "Sender..." : "Send besked"}
                     </Button>
                   </form>
                 </div>
