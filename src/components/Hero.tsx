@@ -28,12 +28,18 @@ export const Hero = () => {
 
             {/* CTAs */}
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button size="lg" className="text-lg px-8 py-6">
+              <Button 
+                size="lg" 
+                className="text-lg px-8 py-6"
+                onClick={() => document.getElementById('contact-form')?.scrollIntoView({ behavior: 'smooth' })}
+              >
                 Få gratis tilbud
               </Button>
-              <Button variant="outline" size="lg" className="text-lg px-8 py-6 gap-2">
-                <Phone className="w-5 h-5" />
-                Ring: 50 59 37 70
+              <Button variant="outline" size="lg" className="text-lg px-8 py-6 gap-2" asChild>
+                <a href="tel:50593770">
+                  <Phone className="w-5 h-5" />
+                  Ring: 50 59 37 70
+                </a>
               </Button>
             </div>
 
