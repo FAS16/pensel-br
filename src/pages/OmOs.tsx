@@ -82,12 +82,12 @@ const OmOs = () => {
                   Vores historie
                 </h2>
                 <p className="text-muted-foreground leading-relaxed mb-6">
-                  Vi er to brødre, der har arbejdet sammen i malerfaget i over 10 år. 
-                  Vores far var også maler, så man kan sige, at vi er vokset op med penslen i hånden.
+
                 </p>
                 <p className="text-muted-foreground leading-relaxed mb-6">
-                  Vi startede vores eget firma, fordi vi ville gøre tingene på vores egen måde – 
-                  med fokus på kvalitet, ærlighed og god kundeservice. Vi tror på, at godt håndværk 
+                  Vi er to brødre, der har arbejdet sammen i malerfaget i over 10 år.
+                  Vi startede vores eget firma, fordi vi ville gøre tingene på vores egen måde –
+                  med fokus på kvalitet, ærlighed og god kundeservice. Vi tror på, at godt håndværk
                   starter med god kommunikation, og vi sætter en ære i at lytte til vores kunder.
                 </p>
                 <p className="text-muted-foreground leading-relaxed">
