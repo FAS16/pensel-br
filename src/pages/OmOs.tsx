@@ -52,6 +52,7 @@ const OmOs = () => {
               muted
               loop
               playsInline
+              preload="metadata"
               className="w-full h-full object-cover"
             >
               <source src="/videos/om-os-hero.mp4" type="video/mp4" />
