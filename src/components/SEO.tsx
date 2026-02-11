@@ -31,7 +31,7 @@ export const SEO = ({
     description: DEFAULT_DESCRIPTION,
     url: BASE_URL,
     telephone: "+4550593770",
-    email: "malerbrodrene@hotmail.com",
+    email: "kontakt@malerbrdr.dk",
     address: {
       "@type": "PostalAddress",
       addressLocality: "København",

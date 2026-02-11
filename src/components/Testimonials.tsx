@@ -1,5 +1,6 @@
 import { Star } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 const testimonials = [
   {
@@ -47,8 +48,10 @@ export const Testimonials = () => {
         </div>
 
         <div className="text-center">
-          <Button variant="outline" size="lg">
-            Se flere anmeldelser
+          <Button variant="outline" size="lg" asChild>
+            <Link to="/anbefalinger">
+              Se flere anmeldelser
+            </Link>
           </Button>
         </div>
       </div>
