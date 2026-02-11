@@ -21,9 +21,9 @@ const reasons = [
 ];
 
 const featuredGallery = [
-  { id: 1, src: gallery1, alt: "Indvendig maling" },
-  { id: 2, src: gallery2, alt: "Udvendig maling" },
-  { id: 3, src: gallery3, alt: "Erhvervsmaling" },
+  { id: 1, src: gallery1, alt: "Udvendig facademaling" },
+  { id: 2, src: gallery2, alt: "Udvendig husmaling" },
+  { id: 3, src: gallery3, alt: "Indvendig maling af værelse" },
 ];
 
 const Index = () => {
