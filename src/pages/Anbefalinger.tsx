@@ -88,6 +88,34 @@ const Anbefalinger = () => {
           </div>
         </section>
 
+        {/* Video testimonial */}
+        <section className="py-16 lg:py-24 bg-background">
+          <div className="container mx-auto px-4">
+            <div className="max-w-3xl mx-auto">
+              <div className="text-center mb-8">
+                <span className="inline-flex items-center gap-2 text-primary font-medium mb-3">
+                  <Star className="w-5 h-5 fill-accent text-accent" />
+                  Videoanbefaling
+                </span>
+                <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+                  Hør hvad vores kunde siger
+                </h2>
+              </div>
+              <div className="rounded-2xl overflow-hidden shadow-lg border border-border">
+                <video
+                  controls
+                  preload="metadata"
+                  className="w-full aspect-video object-cover"
+                  poster=""
+                >
+                  <source src="/videos/kundeanmeldelse.mp4" type="video/mp4" />
+                  Din browser understøtter ikke video.
+                </video>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Stats */}
         <section className="py-12 bg-primary text-primary-foreground">
           <div className="container mx-auto px-4">
