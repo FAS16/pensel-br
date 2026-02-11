@@ -99,6 +99,41 @@ const Index = () => {
           </div>
         </section>
 
+        {/* Video testimonial */}
+        <section className="py-20 lg:py-28 bg-secondary/50">
+          <div className="container mx-auto px-4">
+            <div className="max-w-3xl mx-auto">
+              <div className="text-center mb-8">
+                <span className="inline-flex items-center gap-2 text-primary font-medium mb-3">
+                  <Heart className="w-5 h-5" />
+                  Kundeanmeldelse
+                </span>
+                <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+                  Hør hvad vores kunde siger
+                </h2>
+              </div>
+              <div className="rounded-2xl overflow-hidden shadow-lg border border-border">
+                <video
+                  controls
+                  preload="metadata"
+                  className="w-full aspect-video object-cover"
+                >
+                  <source src="/videos/kundeanmeldelse.mp4" type="video/mp4" />
+                  Din browser understøtter ikke video.
+                </video>
+              </div>
+              <div className="text-center mt-8">
+                <Button variant="outline" size="lg" className="gap-2" asChild>
+                  <Link to="/anbefalinger">
+                    Se alle anbefalinger
+                    <ArrowRight className="w-5 h-5" />
+                  </Link>
+                </Button>
+              </div>
+            </div>
+          </div>
+        </section>
+
         <Testimonials />
 
         {/* Gallery preview */}
