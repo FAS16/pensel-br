@@ -91,8 +91,21 @@ const Anbefalinger = () => {
         {/* Video testimonial */}
         <section className="py-16 lg:py-24 bg-background">
           <div className="container mx-auto px-4">
-            <div className="max-w-3xl mx-auto">
-              <div className="text-center mb-8">
+            <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-8 md:gap-12">
+              <div className="w-full md:w-auto flex-shrink-0">
+                <div className="rounded-2xl overflow-hidden shadow-lg border border-border max-w-[300px] mx-auto">
+                  <video
+                    controls
+                    preload="metadata"
+                    className="w-full aspect-[9/16] object-cover"
+                    poster=""
+                  >
+                    <source src="/videos/kundeanmeldelse.mp4" type="video/mp4" />
+                    Din browser understøtter ikke video.
+                  </video>
+                </div>
+              </div>
+              <div className="text-center md:text-left">
                 <span className="inline-flex items-center gap-2 text-primary font-medium mb-3">
                   <Star className="w-5 h-5 fill-accent text-accent" />
                   Videoanbefaling
@@ -100,17 +113,9 @@ const Anbefalinger = () => {
                 <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
                   Hør hvad vores kunde siger
                 </h2>
-              </div>
-              <div className="rounded-2xl overflow-hidden shadow-lg border border-border">
-                <video
-                  controls
-                  preload="metadata"
-                  className="w-full aspect-video object-cover"
-                  poster=""
-                >
-                  <source src="/videos/kundeanmeldelse.mp4" type="video/mp4" />
-                  Din browser understøtter ikke video.
-                </video>
+                <p className="text-lg text-muted-foreground leading-relaxed">
+                  Vores kunder er vores bedste ambassadører. Se denne personlige anbefaling fra en af vores tilfredse kunder, og hør med egne ører, hvordan det er at arbejde med os.
+                </p>
               </div>
             </div>
           </div>
