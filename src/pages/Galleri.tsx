@@ -11,14 +11,16 @@ import gallery3 from "@/assets/gallery-3.jpg";
 import gallery4 from "@/assets/gallery-4.jpg";
 import gallery5 from "@/assets/gallery-5.jpg";
 import gallery6 from "@/assets/gallery-6.jpg";
+import gallery7 from "@/assets/gallery-7.jpg";
 
 const galleryImages = [
-  { id: 1, src: gallery1, alt: "Indvendig maling af stue", category: "Privat" },
-  { id: 2, src: gallery2, alt: "Udvendig facademaling", category: "Udvendig" },
-  { id: 3, src: gallery3, alt: "Kontormaling", category: "Erhverv" },
-  { id: 4, src: gallery4, alt: "Køkkenmaling", category: "Privat" },
-  { id: 5, src: gallery5, alt: "Trappeopgang", category: "Erhverv" },
-  { id: 6, src: gallery6, alt: "Soveværelse", category: "Privat" },
+  { id: 1, src: gallery1, alt: "Udvendig facademaling", category: "Udvendig" },
+  { id: 2, src: gallery2, alt: "Udvendig husmaling", category: "Udvendig" },
+  { id: 3, src: gallery3, alt: "Indvendig maling af værelse", category: "Privat" },
+  { id: 4, src: gallery4, alt: "Erhvervsmaling af restaurant", category: "Erhverv" },
+  { id: 5, src: gallery5, alt: "Maler Brdr. i arbejde", category: "Privat" },
+  { id: 6, src: gallery6, alt: "Indvendig maling af tagværelse", category: "Privat" },
+  { id: 7, src: gallery7, alt: "Maling af entré og gang", category: "Privat" },
 ];
 
 const Galleri = () => {
