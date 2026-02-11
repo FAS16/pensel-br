@@ -124,7 +124,7 @@ const Anbefalinger = () => {
         {/* Stats */}
         <section className="py-12 bg-primary text-primary-foreground">
           <div className="container mx-auto px-4">
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto text-center">
+            <div className="grid grid-cols-2 gap-8 max-w-2xl mx-auto text-center">
               <div>
                 <p className="text-4xl font-bold mb-1">500+</p>
                 <p className="text-primary-foreground/80 text-sm">Tilfredse kunder</p>
@@ -132,14 +132,6 @@ const Anbefalinger = () => {
               <div>
                 <p className="text-4xl font-bold mb-1">10+</p>
                 <p className="text-primary-foreground/80 text-sm">Års erfaring</p>
-              </div>
-              <div>
-                <p className="text-4xl font-bold mb-1">5.0</p>
-                <p className="text-primary-foreground/80 text-sm">Gennemsnitlig rating</p>
-              </div>
-              <div>
-                <p className="text-4xl font-bold mb-1">100%</p>
-                <p className="text-primary-foreground/80 text-sm">Vil anbefale os</p>
               </div>
             </div>
           </div>
