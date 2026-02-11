@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { MapPin, ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 
 export const Geography = () => {
   return (
@@ -23,9 +24,12 @@ export const Geography = () => {
             size="lg" 
             variant="secondary"
             className="gap-2"
+            asChild
           >
-            Kontakt os i dag
-            <ArrowRight className="w-5 h-5" />
+            <Link to="/kontakt">
+              Kontakt os i dag
+              <ArrowRight className="w-5 h-5" />
+            </Link>
           </Button>
         </div>
       </div>
