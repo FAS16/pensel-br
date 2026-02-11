@@ -8,9 +8,9 @@ interface SEOProps {
   image?: string;
 }
 
-const SITE_NAME = "Malerfirma";
-const DEFAULT_DESCRIPTION = "To brødre udfører professionelt malerarbejde for private og erhverv på hele Sjælland. Gratis rådgivning og uforpligtende tilbud.";
-const BASE_URL = "https://malerfirma.dk";
+const SITE_NAME = "Malerbrdr";
+const DEFAULT_DESCRIPTION = "To brødre udfører professionelt malerarbejde for private og erhverv i hele Storkøbenhavn. Gratis rådgivning og uforpligtende tilbud.";
+const BASE_URL = "https://malerbrdr.dk";
 
 export const SEO = ({
   title,
@@ -19,7 +19,7 @@ export const SEO = ({
   type = "website",
   image = "/og-image.jpg",
 }: SEOProps) => {
-  const fullTitle = title ? `${title} | ${SITE_NAME}` : `${SITE_NAME} – Professionelt malerarbejde på Sjælland`;
+  const fullTitle = title ? `${title} | ${SITE_NAME}` : `${SITE_NAME} – Professionelt malerarbejde i hele Storkøbenhavn.`;
   const canonicalUrl = canonical ? `${BASE_URL}${canonical}` : undefined;
 
   // Local Business structured data
@@ -35,7 +35,7 @@ export const SEO = ({
     address: {
       "@type": "PostalAddress",
       addressLocality: "København",
-      addressRegion: "Sjælland",
+      addressRegion: "Storkøbenhavn",
       addressCountry: "DK",
     },
     geo: {
@@ -45,7 +45,7 @@ export const SEO = ({
     },
     areaServed: {
       "@type": "State",
-      name: "Sjælland",
+      name: "Storkøbenhavn",
     },
     priceRange: "$$",
     openingHoursSpecification: {

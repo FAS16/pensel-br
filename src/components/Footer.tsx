@@ -18,7 +18,7 @@ export const Footer = () => {
               <span className="font-bold text-xl">Maler Brdr.</span>
             </Link>
             <p className="text-background/70 text-sm">
-              Professionelt malerarbejde udført af to brødre. Vi dækker hele Sjælland.
+              Professionelt malerarbejde udført af to brødre. Vi dækker hele Storkøbenhavn.
             </p>
           </div>
 
@@ -36,7 +36,7 @@ export const Footer = () => {
               </a>
               <div className="flex items-center gap-3 text-background/70">
                 <MapPin className="w-4 h-4" />
-                <span>Amager & Nordvest, København</span>
+                <span>Storkøbenhavn | København</span>
               </div>
             </div>
           </div>

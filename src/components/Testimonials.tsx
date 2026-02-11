@@ -9,7 +9,7 @@ const testimonials = [
   },
   {
     quote: "God dialog, flot finish og alt blev leveret til tiden.",
-    customer: "Erhvervskunde, Sjælland",
+    customer: "Erhvervskunde, Vallensbæk",
     task: "Kontorlokaler",
   },
 ];

@@ -26,7 +26,7 @@ const Galleri = () => {
     <div className="min-h-screen">
       <SEO 
         title="Galleri"
-        description="Se billeder af vores malerarbejde. Indvendig og udvendig maling for private og erhverv. Alle billeder viser opgaver udført af os på Sjælland."
+        description="Se billeder af vores malerarbejde. Indvendig og udvendig maling for private og erhverv. Alle billeder viser opgaver udført af os."
         canonical="/galleri"
       />
       <Header />

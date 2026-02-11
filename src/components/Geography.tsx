@@ -12,11 +12,11 @@ export const Geography = () => {
           </div>
           
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            Vi dækker hele Sjælland
+            Vi dækker hele Storkøbenhavn
           </h2>
           
           <p className="text-lg md:text-xl opacity-90 mb-8">
-            Vi har base på Amager og i Nordvest, men kører ud til opgaver på hele Sjælland.
+            Vi kører ud til opgaver i hele Storkøbenhavn.
           </p>
           
           <Button 

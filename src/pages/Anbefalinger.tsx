@@ -69,7 +69,7 @@ const Anbefalinger = () => {
     <div className="min-h-screen">
       <SEO 
         title="Anbefalinger"
-        description="Læs hvad vores kunder siger om os. Se anmeldelser og anbefalinger fra private og erhvervskunder på hele Sjælland."
+        description="Læs hvad vores kunder siger om os. Se anmeldelser og anbefalinger fra private og erhvervskunder."
         canonical="/anbefalinger"
       />
       <Header />

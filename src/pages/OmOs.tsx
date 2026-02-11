@@ -38,7 +38,7 @@ const OmOs = () => {
     <div className="min-h-screen">
       <SEO 
         title="Om os"
-        description="Mød de to brødre bag malerfirmaet. Over 10 års erfaring med professionelt malerarbejde på Sjælland. Kvalitet, ærlighed og god kundeservice."
+        description="Mød de to brødre bag malerfirmaet. Over 10 års erfaring med professionelt malerarbejde i Storkøbenhavn. Kvalitet, ærlighed og god kundeservice."
         canonical="/om-os"
       />
       <Header />
@@ -91,7 +91,7 @@ const OmOs = () => {
                   starter med god kommunikation, og vi sætter en ære i at lytte til vores kunder.
                 </p>
                 <p className="text-muted-foreground leading-relaxed">
-                  I dag har vi base på Amager og i Nordvest, og vi kører ud til opgaver på hele Sjælland. 
+                  Vi kører ud til opgaver i hele Storkøbenhavn.
                   Uanset om det er en lille opgave eller et større projekt, behandler vi alle kunder ens – 
                   med respekt og engagement.
                 </p>

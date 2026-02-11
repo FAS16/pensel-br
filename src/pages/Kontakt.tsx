@@ -62,7 +62,7 @@ const Kontakt = () => {
     <div className="min-h-screen">
       <SEO 
         title="Kontakt"
-        description="Kontakt os for gratis rådgivning og uforpligtende tilbud på malerarbejde. Ring 50 59 37 70 eller udfyld formularen. Vi dækker hele Sjælland."
+        description="Kontakt os for gratis rådgivning og uforpligtende tilbud på malerarbejde. Ring 50 59 37 70 eller udfyld formularen. Vi dækker hele Storkøbenhavn."
         canonical="/kontakt"
       />
       <Header />
@@ -126,8 +126,8 @@ const Kontakt = () => {
                     </div>
                     <div>
                       <h3 className="font-semibold text-foreground">Område</h3>
-                      <p className="text-muted-foreground">Amager & Nordvest, København</p>
-                      <p className="text-sm text-muted-foreground mt-1">Vi dækker hele Sjælland</p>
+                      <p className="text-muted-foreground">København | Storkøbenhavn</p>
+                      <p className="text-sm text-muted-foreground mt-1">Vi dækker hele Storkøbenhavn</p>
                     </div>
                   </div>
 

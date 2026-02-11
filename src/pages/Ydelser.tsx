@@ -43,7 +43,7 @@ const Ydelser = () => {
     <div className="min-h-screen">
       <SEO 
         title="Ydelser"
-        description="Se vores malerydelser: indvendig og udvendig maling, spartling, tapetsering og farverådgivning. Vi hjælper private og erhverv på hele Sjælland."
+        description="Se vores malerydelser: indvendig og udvendig maling, spartling, tapetsering og farverådgivning. Vi hjælper private og erhverv i hele Storkøbenhavn."
         canonical="/ydelser"
       />
       <Header />
