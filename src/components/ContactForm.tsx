@@ -25,7 +25,7 @@ export const ContactForm = () => {
         EMAILJS_TEMPLATE_ID,
         {
           from_name: name,
-          phone: phone,
+          phone,
         },
         EMAILJS_PUBLIC_KEY
       );
