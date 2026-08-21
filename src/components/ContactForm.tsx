@@ -30,6 +30,8 @@ export const ContactForm = () => {
         EMAILJS_PUBLIC_KEY
       );
 
+      trackLeadFormSuccess("callback_form");
+
       toast({
         title: "Tak for din henvendelse!",
         description: "Vi ringer dig op hurtigst muligt.",

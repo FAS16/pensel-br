@@ -39,6 +39,8 @@ const Kontakt = () => {
         EMAILJS_PUBLIC_KEY
       );
 
+      trackLeadFormSuccess("contact_form");
+
       toast({
         title: "Tak for din henvendelse!",
         description: "Vi vender tilbage til dig hurtigst muligt.",
