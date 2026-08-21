@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
+import { trackLeadFormSuccess } from "@/lib/analytics";
 import { Phone, Mail, MapPin, Clock } from "lucide-react";
 import emailjs from "@emailjs/browser";
 
@@ -37,6 +38,8 @@ const Kontakt = () => {
         },
         EMAILJS_PUBLIC_KEY
       );
+
+      trackLeadFormSuccess("contact_form");
 
       toast({
         title: "Tak for din henvendelse!",
