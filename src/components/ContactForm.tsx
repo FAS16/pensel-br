@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { useToast } from "@/hooks/use-toast";
+import { trackLeadFormSuccess } from "@/lib/analytics";
 import emailjs from "@emailjs/browser";
 
 const EMAILJS_SERVICE_ID = "service_l69m6nu";
