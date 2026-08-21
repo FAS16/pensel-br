@@ -32,9 +32,9 @@ const Kontakt = () => {
         EMAILJS_TEMPLATE_ID,
         {
           from_name: name,
-          phone: phone,
-          email: email,
-          message: message,
+          phone,
+          email,
+          message,
         },
         EMAILJS_PUBLIC_KEY
       );
